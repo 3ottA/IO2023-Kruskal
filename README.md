@@ -2,13 +2,10 @@
 
 Este repositorio contiene un programa en Python que implementa el algoritmo de Kruskal para encontrar el árbol de expansión mínima de un grafo conectado, no dirigido y ponderado. A continuación, se describe cómo configurar el entorno para ejecutar el algoritmo.
 
-## Requisitos previos
-
-- Python: Es necesario tener instalado Python en tu sistema. Puedes descargar la última versión de Python desde el sitio web oficial: <https://www.python.org/downloads/>
 
 ## Pasos
 
-1. **Instalar Python:** Descarga e instala la versión más reciente de Python para tu sistema operativo.
+1. **Instalar Python:** Descarga e instala la versión más reciente de Python para tu sistema operativo. Puedes descargar la última versión de Python desde el sitio web oficial: <https://www.python.org/downloads/>
 
 2. **Instalar las bibliotecas requeridas:** El algoritmo utiliza las siguientes bibliotecas: `tkinter`, `matplotlib` y `networkx`. Para instalarlas, puedes usar el administrador de paquetes `pip` de la siguiente manera:
 
