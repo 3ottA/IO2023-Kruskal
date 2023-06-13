@@ -106,8 +106,8 @@ class Grafo:
             # Show the graph
             plt.show()
         print("Árbol de expansión mínima:", costoMinimo)
-        costoMinimo = 0
-        return(nodos,aristas)
+
+        return(nodos,aristas,costoMinimo)
 
 from tkinter import Tk, Label, Entry, Button, Frame, messagebox
 
@@ -200,7 +200,11 @@ class InterfazGrafica:
         if not self.aristas_ingresadas:
             messagebox.showerror("Error", "No se han ingresado aristas.")
             return
-        nodos,aristas=g.KruskalMST()
+        nodos,aristas,costoMinimo = g.KruskalMST()
+        textContador = "El costo mínimo total resultante : " + str(costoMinimo)
+        self.label_resultado = Label(self.frame, text=textContador, font=("Arial", 18))
+        self.label_resultado.pack()
+
         graph = nx.DiGraph()
         graph.add_nodes_from(nodos)
         graph.add_weighted_edges_from(aristas)
